@@ -14,10 +14,7 @@ def init_docs(app, url_prefix):
 
     discourse_api = DiscourseAPI(base_url="https://discourse.jujucharms.com/")
     discourse_parser = DocParser(
-        discourse_api, 
-        22, 
-        discourse_index_id, 
-        url_prefix
+        discourse_api, 22, discourse_index_id, url_prefix
     )
     discourse_docs = DiscourseDocs(
         parser=discourse_parser,
